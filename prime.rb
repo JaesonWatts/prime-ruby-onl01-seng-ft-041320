@@ -1,7 +1,7 @@
 def prime?(num)
-  if num.abs / 2 == 0
+  if ((num / 2)(-1) == 0)
     false
-  elsif num.abs /2 != 0
+  elsif ((num / 2)(-1) != 0)
     true
   end
 end
