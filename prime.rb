@@ -4,7 +4,7 @@ def prime?(num)
   else
     new_num = num
   end
-  if num % 2 == 0
+  if (new_num / 2 == 0)
     false
   elsif new_num / 2 != 0 
     true
