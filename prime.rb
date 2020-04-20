@@ -1,10 +1,12 @@
 def prime?(num)
   if num <= 0 
-    num = num * -1
+    new_num = num * -1
+  else
+    new_num = num
   end
-  if (num / 2 == 0)
+  if (new_num / 2 == 0)
     false
-  elsif num / 2 != 0 
+  elsif new_num / 2 != 0 
     true
   end
 end
