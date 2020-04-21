@@ -1,12 +1,8 @@
 def prime?(num)
-  if num <= 0 
-    new_num = num * -1
-  else
-    new_num = num
-  end
-  if (new_num / 2 == 0)
-    false
-  elsif new_num / 2 != 0 
-    true
-  end
+  return false if !num.integer?
+  return false if num < 2
+  return true if num == 2
+  (2..num-1).each {|int| return false if num % int == 0}
+  
+  true
 end
